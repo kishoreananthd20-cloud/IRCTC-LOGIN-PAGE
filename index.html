@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IRCTC Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <h1>IRCTC</h1>
+    <span>Indian Railway Catering and Tourism Corporation</span>
+</header>
+
+<div class="container">
+    <div class="login-box">
+        <h2>Login</h2>
+
+        <label>User Name</label>
+        <input type="text" id="username" placeholder="Enter User Name">
+
+        <label>Password</label>
+        <input type="password" id="password" placeholder="Enter Password">
+
+        <label>Captcha</label>
+        <div class="captcha-box">
+            <div class="captcha" id="captchaText"></div>
+            <span class="refresh" onclick="generateCaptcha()">↻ Refresh</span>
+        </div>
+
+        <input type="text" id="captchaInput" placeholder="Enter Captcha">
+
+        <button onclick="login()">Login</button>
+
+        <div class="error" id="errorMsg"></div>
+
+        <div class="links">
+            <a href="#">Forgot Password</a> |
+            <a href="#">Register</a>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
